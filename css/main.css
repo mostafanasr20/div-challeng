@@ -49,6 +49,8 @@ ul{
       max-width: 1160px;
     }
   }
+
+
   .header-landing{
      background-image: url(../images/blue-planet.webp);
          background-size:cover ;
@@ -59,8 +61,10 @@ ul{
 background-color: #0e0d0e28;
     padding: 0 30px;
         display: flex;
+        width: 100%;
         align-items: center;
         justify-content: space-between;
+      
         .logo{
             img{
                width: 200px;
@@ -264,9 +268,79 @@ background-color: #0e0d0e28;
 }
 
   }
-.title-text{
+
+
+   
+  
+  
+  @media(max-width : 1000px){
+    .header-landing{
+        .header{
+           ul{
+            display: none;
+        } 
+        }
+        
+    }
+}
+@media(max-width: 728px){
+    .header-landing{
+        .landing{
+            .cap-text{
+                p{
+                    font-size: 40px;
+                }
+                h3{
+                    font-size: 40px;
+                }
+            }
+        }
+
+    }
+    .title-text{
+        p{
+            font-size: 15px;
+        }
+        .btn{
+            display: none;
+           
+        a{
+             padding:13px 10px ;
+        }
+        }
+    }
+}
+
+@media(max-width: 446px){
+    .header-landing{
+        .header{
+            padding: 15px ;
+        
+            .logo{
+                img{
+                    width: 0px
+                }
+            }
+        }
+        .landing{
+            .cap-text{
+                p{
+                    font-size: 20px;
+                    font-weight: normal;
+                    letter-spacing: 1.5;
+                }
+                h3{
+                    font-size: 25px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+}
+   .title-text{
 text-align: center;
-margin-top: -70px;
+/* margin-top: -70px; */
 letter-spacing: 1.3px;
 p{
     font-size: 18px;
@@ -288,23 +362,29 @@ p{
                text-align: center;
                padding:12px 30px;
            font-size: 14px;
-    
             background-image: linear-gradient(to bottom , #cb02e6 , #e48cffd3);
-             }
-}
-}
-
-   
-  
-  
-  @media(max-width : 1000px){
-    .header{
-        ul{
-            display: none;
+           
         }
+
+}
+.btn:hover{
+    outline: 3px solid #661a70;
+     transition: .7s;
+    a{
+         transition: .7s;
+         background-image: linear-gradient(to bottom , #661a70 , #da489dd3);
     }
 }
-    .boxes{
+
+}
+.boxes-master{
+    /* height: 100vh; */
+     display: flex;
+    flex-direction: column-reverse;
+    margin-top: 450px;
+ 
+  
+.boxes{
        --box-w: 315px;
         position: absolute;
         display: flex;
@@ -313,15 +393,13 @@ p{
         overflow: hidden;
         width: 100%;
         height: 500px;
-    }
-      @keyframes track{
-        to{
-            left: calc(-1 * var(--box-w))
-        }
-    }
-        .box{
+ }
+
+   
+
+     .box{
              --duration: 200s;
-             overflow: hidden;
+             /* overflow: hidden; */
         position: absolute;
         width:var(--box-w);
         height: max-content;
@@ -373,8 +451,7 @@ p{
             }
         }
     }
-
-    .box.box1{
+     .box.box1{
         animation-delay: calc(var(--duration)/ 10 *(10 - 1) * -1);
     }
     .box.box2{
@@ -408,6 +485,97 @@ p{
 
         animation-delay: calc(var(--duration)/ 10 *(10 - 10) * -1);
     }
+}
+    
+ 
+    
+    @keyframes track{ 
+        to{
+            left: calc(-1 * var(--box-w))
+        }
+    } 
+        .master{
+            /* height: 100vh; */
+        
+     /* margin: 48px 35px 0; */
+     padding: 0 40px;
+     .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 100px; */
+        h3{
+            margin: 16px 0 8px;
+            font-size: 35px;
+            color: #f3f4f6;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5;
+            /* font-weight: normal; */
+            span{
+                background-image: linear-gradient(to right, #9635c4, #e5ab2e);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+        p{
+            color: #9ca3af;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+        }
+       
+     }
+    
+     .box{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        padding: 24px;
+       margin-bottom: 100px;
+        .left{
+        margin: 12px 0 0 ;
+        padding: 8px;
+        .head{
+            span{
+                color: #9ca3af;
+                font-size: 12px;
+            }
+            p{
+                font-size: 20px;
+                color: #d1d5d8;
+                margin: 12px 0 0;
+            }
+        }
+        .text{
+            p{
+                color: #9ca3af;
+                font-size: 16px;
+                margin: 16px 0 0;
+                line-height: 1.5;
+            }
+        }
+     }
+     .right{
+        img{
+            width: 543px;
+            height: 305px;
+            border-radius: 10px;
+        }
+     }
+     } 
+}
+
+
+
+   
+    
+
+
+   
 
 
 
