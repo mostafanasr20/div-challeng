@@ -850,6 +850,9 @@ top: 40px;
       }
 
         @media(max-width:510px ){
+            .boxes{
+                display: none;
+            }
             .ultimate{
                 display: none;
              width: 398px;  
