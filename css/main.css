@@ -13,7 +13,7 @@
 body{
     background-color: #020617;
     font-family: "open Sans";
-    overflow: hidden;
+    overflow-y: hidden;
 }
 a{
     text-decoration: none;
@@ -57,7 +57,7 @@ ul{
          background-size:cover ;
          height: max-content;
           background-position: center;
-          height: 340px;
+         width: 100%;
     .header{
 background-color: #0e0d0e28;
     padding: 0 30px;
@@ -514,6 +514,7 @@ top: 40px;
     .master{
         padding: 0 40px;
         margin: 48px 35px 0;
+        width: 100%;
         .heading{
             margin-bottom: 70px;
         display: flex;
@@ -671,6 +672,7 @@ top: 40px;
         height:max-content;
         margin: 64px;
         margin: 16px 0 0 ;
+        width: 100%;
            .heading{
             margin-bottom: 70px;
         display: flex;
@@ -850,8 +852,24 @@ top: 40px;
       }
 
         @media(max-width:510px ){
-            .boxes{
-                display: none;
+
+            .header-landing{
+                .header{
+                    .btn{
+                        display: none;
+                    }
+                    .logo{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                .landing{
+                    h3{
+                        font-size: 10px;
+                        
+                    }
+                }
+
             }
             .ultimate{
                 display: none;
@@ -864,6 +882,7 @@ top: 40px;
 
 
       .asked{
+        width: 100%;
         .container{
             margin: 96px 201px 32px;
             h2{
@@ -972,6 +991,7 @@ top: 40px;
 
 
       .footer{
+        width: 100%;
         padding: 24px 48px 48px;
         background-color: #020617f2;
         margin-top: 20px;
