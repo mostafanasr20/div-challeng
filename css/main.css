@@ -648,7 +648,7 @@ top: 40px;
                     
                 }
                 p{
-                    font-size: 10px;
+                    font-size: 6px;
                 }
                
             }
@@ -659,6 +659,7 @@ top: 40px;
               width: 350px;
             
                .head-text{
+                margin-left: 10px;
                 .text{
                      p{
                 font-size: 10px; 
