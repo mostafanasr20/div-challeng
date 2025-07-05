@@ -13,7 +13,7 @@
 body{
     background-color: #020617;
     font-family: "open Sans";
-    /* overflow-x: hidden; */
+  
   
 }
 a{
@@ -58,7 +58,7 @@ ul{
          background-size:cover ;
          height: max-content;
           background-position: center;
-         width: 100%;
+         /* width: 100%; */
     .header{
 background-color: #0e0d0e28;
     padding: 0 30px;
@@ -101,7 +101,13 @@ background-color: #0e0d0e28;
                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                   left: -50px;
                   display: none;
-                    transition: .5s;                
+                    transition: .5s;   
+                    .mega {
+  left: 0;
+  right: 0; /* التأكد من البقاء ضمن الحدود */
+  width: 100%;
+  max-width: 300px; /* تحديد عرض أقصى */
+}
                     .wep{
                      
                         display: flex;
@@ -411,11 +417,11 @@ top: 40px;
         position: relative;
         display: flex;
         align-items: center;
-       
         overflow: hidden;
         width: 100%;
         height: 500px;
         top: 80px;
+
 }
        @keyframes track{ 
         to{
@@ -515,7 +521,7 @@ top: 40px;
     .master{
         padding: 0 40px;
         margin: 48px 35px 0;
-        width: 100%;
+        overflow: hidden;
         .heading{
             margin-bottom: 70px;
         display: flex;
@@ -551,7 +557,7 @@ top: 40px;
         
      }
      .boex{
-       
+       overflow: hidden;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -701,7 +707,7 @@ top: 40px;
         height:max-content;
         margin: 64px;
         margin: 16px 0 0 ;
-        width: 100%;
+       overflow: hidden;
            .heading{
             margin-bottom: 70px;
         display: flex;
@@ -912,7 +918,7 @@ top: 40px;
 
 
       .asked{
-        width: 100%;
+    overflow: hidden;
         .container{
             margin: 96px 201px 32px;
             h2{
@@ -1019,9 +1025,14 @@ top: 40px;
         }
       }
 
+      @media (min-width: 768px) {
+  .asked .container {
+    margin: 96px 201px 32px;
+  }
+}
 
       .footer{
-        width: 100%;
+      overflow: hidden;
         padding: 24px 48px 48px;
         background-color: #020617f2;
         margin-top: 20px;
