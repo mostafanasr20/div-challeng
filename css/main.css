@@ -655,7 +655,8 @@ top: 40px;
                 display: grid;
             grid-template-columns: 1fr;
             align-items: start;
-              width: 382px;
+              /* width: 382px; */
+              padding: 0;
                .head-text{
                 .text{
                      p{
