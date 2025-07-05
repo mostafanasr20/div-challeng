@@ -13,7 +13,8 @@
 body{
     background-color: #020617;
     font-family: "open Sans";
-    overflow-y: hidden;
+    /* overflow-x: hidden; */
+  
 }
 a{
     text-decoration: none;
@@ -632,17 +633,25 @@ top: 40px;
     }
 
     @media(max-width:510px ){
-        .master{ 
+      
+        .master{
+            width: max-content; 
+            margin: 48px 0 0;
+            text-align: center;
             .heading{
                 h3{
-                    font-size: 30px;
+                    font-size: 35px;
                     text-align: center;
+                }
+                .boex{
+                  
                 }
             }
             .boex{
                 display: grid;
             grid-template-columns: 1fr;
             align-items: center;
+              width: 382px;
             .width{
               height: 50px;  
             }
@@ -656,8 +665,7 @@ top: 40px;
             }
             
                 img{
-                    width: 300px;
-                    
+                    width: 450px;
                   margin: 15px 0;
                 }
             }
