@@ -639,6 +639,17 @@ top: 40px;
     }
 
     @media(max-width:510px ){
+        .header-landing{
+            .header{
+                .btn{
+                    display: none;
+                }
+                .logo{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
       
         .master{
             width: max-content; 
